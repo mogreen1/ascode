@@ -4,4 +4,4 @@ logging_global:
 snmp_server:
     communities:
     -   name: gitpullrequest
-        ro: true
+        rw: true
