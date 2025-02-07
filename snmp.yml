@@ -1,4 +1,6 @@
-logging_global: {}
+logging_global:
+    hosts:
+    -   host: 1.1.1.1
 snmp_server:
     communities:
     -   name: mystring
