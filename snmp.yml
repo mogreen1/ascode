@@ -3,6 +3,5 @@ logging_global:
     -   host: 1.1.1.1
 snmp_server:
     communities:
-    -   name: test
-        rw: true
-        ro: false
+    -   name: snmpstring
+        ro: true
