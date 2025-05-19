@@ -1,7 +1,7 @@
 logging_global:
     hosts:
-    -   host: 2.2.2.2
+    -   host: 2.2.2.37
 snmp_server:
     communities:
-    -   name: may2025
-        ro: true
+    -   name: mayday
+        rw: true
