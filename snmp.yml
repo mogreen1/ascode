@@ -1,7 +1,7 @@
 logging_global:
     hosts:
-    -   host: 1.1.1.1
+    -   host: 2.2.2.2
 snmp_server:
     communities:
-    -   name: newstring
+    -   name: may2025
         ro: true
