@@ -3,6 +3,5 @@ logging_global:
     -   host: 2.2.2.37
 snmp_server:
     communities:
-    -   name: new
-        ro: false
-        rw: true
+    -   name: test
+        rw: True
