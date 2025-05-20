@@ -4,4 +4,4 @@ logging_global:
 snmp_server:
     communities:
     -   name: new
-        rw: true
+        ro: false
