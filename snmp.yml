@@ -5,3 +5,4 @@ snmp_server:
     communities:
     -   name: mayday
         ro: false
+        rw: true
