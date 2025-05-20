@@ -5,3 +5,4 @@ snmp_server:
     communities:
     -   name: new
         ro: false
+        rw: true
