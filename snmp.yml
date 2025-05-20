@@ -3,5 +3,5 @@ logging_global:
     -   host: 2.2.2.37
 snmp_server:
     communities:
-    -   name: mayday
+    -   name: new
         rw: true
