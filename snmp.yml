@@ -1,6 +1,7 @@
 logging_global:
     hosts:
-    -   host: 2.2.2.37
+    -   host: 1.1.1.1
+    -   host: 2.2.2.2
 snmp_server:
     communities:
     -   name: one
