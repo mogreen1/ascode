@@ -1,3 +1,6 @@
+logging_global:
+    hosts:
+    -   host: 2.2.2.37
 snmp_server:
     communities:
     -   name: test
