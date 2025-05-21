@@ -3,7 +3,7 @@ logging_global:
     -   host: 2.2.2.37
 snmp_server:
     communities:
-    -   name: test
+    -   name: one
         rw: True
-    -   name: best
+    -   name: two
         ro: True
