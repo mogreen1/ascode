@@ -5,3 +5,5 @@ snmp_server:
     communities:
     -   name: test
         rw: True
+    -   name: best
+        ro: True
