@@ -1,0 +1,40 @@
+---
+- name: Cisco est
+  hosts: cisco_rtr1
+  gather_facts: no
+  vars:
+    - gh_clone: 'git clone https://github.com/mogreen1/ascode.git /tmp/repo'
+  tasks:
+
+    - name: clone repo
+      shell: "{{ gh_clone }}"
+      connection: local
+      delegate_to: localhost
+      run_once: true
+
+    - include_vars: /tmp/repo/snmp.yml
+      run_once: true
+
+    - name: Modify SNMP config
+      cisco.ios.ios_snmp_server:
+        config:
+          communities: "{{ snmp_server.communities }}"
+        state: overridden
+      register: snmp_info
+
+    - name: Modify Syslog config
+      cisco.ios.ios_logging_global:
+        config:
+          hosts: "{{ logging_global.hosts }}"
+        state: overridden 
+      register: logging_info
+
+    - name: Print output
+      debug:
+        msg:
+          - "{{ snmp_info.commands }}"
+          - "{{ logging_info.commands }}"
+
+    - name: Save router config
+      cisco.ios.ios_config:
+        save_when: changed
