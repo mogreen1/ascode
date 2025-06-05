@@ -1,5 +1,5 @@
 ---
-- name: Cisco est
+- name: Cisco Infra as Code - Check
   hosts: all
   gather_facts: no
   vars:
