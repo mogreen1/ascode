@@ -34,8 +34,8 @@
     - name: Pass along command information
       ansible.builtin.set_stats:
         data:
-          snmp_info: "{{ snmp_info }}"
-          logging_info: "{{ logging_info}}"
+          snmp_info: "{{ snmp_info.commands }}"
+          logging_info: "{{ logging_info.commands }}"
         per_host: false
       delegate_to: localhost
 
