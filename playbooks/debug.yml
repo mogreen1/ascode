@@ -6,5 +6,5 @@
     - name: Print output
       debug:
         msg:
-          - "{{ logging_info_commands }}"
-          - "{{ snmp_info_commands }}"
+          - "{{ logging_commands }}"
+          - "{{ snmp_commands }}"
