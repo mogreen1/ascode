@@ -38,6 +38,7 @@
           logging_info: "{{ logging_info.commands }}"
         per_host: false
       delegate_to: localhost
+      run_once: true
 
     - name: Print output
       debug:
