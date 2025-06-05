@@ -1,6 +1,6 @@
 ---
 - name: Cisco est
-  hosts: cisco_rtr1
+  hosts: all
   gather_facts: no
   vars:
     - gh_clone: 'git clone https://github.com/mogreen1/ascode.git /tmp/repo'
