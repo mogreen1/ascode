@@ -1,10 +1,10 @@
 logging_global:
     hosts:
-    -   host: 1.1.1.1
-    -   host: 6.2.2.2
+    -   host: 11.1.1.1
+    -   host: 16.2.2.2
 snmp_server:
     communities:
-    -   name: one
+    -   name: eleven
         rw: True
-    -   name: six
+    -   name: sixteen
         ro: True
