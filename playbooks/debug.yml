@@ -1,0 +1,10 @@
+---
+- name: Print Command output
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: Print output
+      debug:
+        msg:
+          - "{{ logging_info}}"
+          - "{{ snmp_info }}"

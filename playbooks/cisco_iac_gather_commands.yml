@@ -31,6 +31,14 @@
       register: logging_info
       check_mode: yes
 
+    - name: Pass along command information
+      ansible.builtin.set_stats:
+        data:
+          snmp_info: "{{ snmp_info }}"
+          logging_info: "{{ logging_info}}"
+        per_host: false
+      delegate_to: localhost
+
     - name: Print output
       debug:
         msg:
