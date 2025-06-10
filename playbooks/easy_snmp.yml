@@ -9,5 +9,5 @@
       cisco.ios.ios_snmp_server:
         config:
           communities:
-            - name: my-private-string
+            - name: "{{ my_snmp_variable }}"
               rw: True
