@@ -1,0 +1,13 @@
+---
+- name: Configure SNMP string on Cisco IOS-XE Device
+  hosts: all
+  gather_facts: false
+
+  tasks:
+
+    - name: Modify SNMP config
+      cisco.ios.ios_snmp_server:
+        config:
+          communities:
+            - name: my-private-string
+              rw: True
