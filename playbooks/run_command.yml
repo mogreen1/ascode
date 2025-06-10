@@ -1,0 +1,10 @@
+---
+- name: Run command on Cisco IOS-XE Device
+  hosts: all
+  gather_facts: false
+
+  tasks:
+    - name: Run CLI command
+      cisco.ios.ios_config:
+        lines:
+          - "{{ user_input | default('show version') }}"
