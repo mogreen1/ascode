@@ -1,7 +1,7 @@
 logging_global:
     hosts:
-    -   host: 12.1.1.1
-    -   host: 17.2.2.2
+    -   host: syslog1.shadowman.dev
+    -   host: syslog2.shadowman.dev
 snmp_server:
     communities:
     -   name: new_read_write
