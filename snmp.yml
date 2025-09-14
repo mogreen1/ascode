@@ -4,7 +4,7 @@ logging_global:
     -   host: 17.2.2.2
 snmp_server:
     communities:
-    -   name: twelve
+    -   name: new_read_write
         rw: True
-    -   name: seventeen
+    -   name: new_read_only
         ro: True
