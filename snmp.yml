@@ -1,7 +1,7 @@
 logging_global:
     hosts:
-    -   host: 1.1.1.8
-    -   host: 1.1.1.9
+    -   host: 1.1.1.10
+    -   host: 1.1.1.12
 snmp_server:
     communities:
     -   name: new_read_write
