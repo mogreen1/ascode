@@ -4,7 +4,7 @@ logging_global:
     -   host: 1.1.1.12
 snmp_server:
     communities:
-    -   name: new_read_write
+    -   name: old_read_write
         rw: True
-    -   name: new_read_only
+    -   name: old_read_only
         ro: True
