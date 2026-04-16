@@ -3,7 +3,7 @@
   hosts: all
   gather_facts: no
   vars:
-    - gh_clone: 'git clone https://github.com/mogreen1/ascode.git /tmp/repo'
+    gh_clone: 'git clone https://github.com/mogreen1/ascode.git /tmp/repo'
   tasks:
 
     - name: clone repo
